@@ -10,11 +10,14 @@ import androidx.appcompat.app.AlertDialog
 import java.text.DecimalFormat
 
 class MainActivity : AppCompatActivity() {
-    private var percentual: Double = 0.7
+    private var percentual: Double = 0.0
     private var gasPrice: Double = 0.0
     private var alcoolPrice: Double = 0.0
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        if (savedInstanceState != null) {
+            percentual = savedInstanceState.getDouble("percentual", 0.70)
+        }
         setContentView(R.layout.activity_main)
         val gasPriceText: EditText = findViewById(R.id.edGasolina)
         val alcoolPriceText: EditText = findViewById(R.id.edAlcool)
@@ -52,6 +55,9 @@ class MainActivity : AppCompatActivity() {
             }
 //            Log.d("PDM23", "No btCalcular, $percentual")
         })
+        if (savedInstanceState != null) {
+            savedInstanceState.putDouble("percentual", percentual)
+        }
     }
 
     override fun onResume() {
