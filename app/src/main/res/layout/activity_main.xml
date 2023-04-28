@@ -45,33 +45,37 @@
 
         <EditText
             android:id="@+id/edAlcool"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_height="64dp"
             android:layout_marginHorizontal="30dp"
             android:ems="10"
-            android:hint="Preço da gasolina"
-            android:inputType="numberDecimal" />
+            android:hint="Preço do Alcool"
+            android:inputType="numberDecimal"
+            tools:text="0" />
 
         <EditText
             android:id="@+id/edGasolina"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_height="67dp"
+            android:layout_margin="30dp"
             android:ems="10"
-            android:hint="alcool"
-            android:inputType="numberDecimal" />
+            android:hint="Preço da Gasolina"
+            android:inputType="numberDecimal"
+            tools:text="0" />
 
         <Switch
             android:id="@+id/swPercentual"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="98dp"
+            android:layout_height="53dp"
             android:layout_gravity="right"
             android:layout_marginHorizontal="30dp"
-            android:text="75%" />
+            android:text="75%"
+            tools:checked="false" />
 
         <Button
             android:id="@+id/btCalcular"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="150dp"
+            android:layout_height="61dp"
             android:layout_gravity="center_horizontal"
             android:layout_marginVertical="20dp"
             android:backgroundTint="#CB584C"
