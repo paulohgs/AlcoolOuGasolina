@@ -7,8 +7,6 @@ import android.util.Log
 import android.view.View
 import android.widget.*
 import androidx.appcompat.app.AlertDialog
-import java.text.DecimalFormat
-
 class MainActivity : AppCompatActivity() {
     private var percentual: Double = 0.0
     private var gasPrice: Double = 0.0

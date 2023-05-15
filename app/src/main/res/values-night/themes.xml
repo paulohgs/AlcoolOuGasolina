@@ -2,7 +2,7 @@
     <!-- Base application theme. -->
     <style name="Theme.AlcoolOuGasolina" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
         <!-- Primary brand color. -->
-        <item name="colorPrimary">#4A1C9A</item>
+        <item name="colorPrimary">#C3A9EF</item>
         <item name="colorPrimaryVariant">@color/purple_700</item>
         <item name="colorOnPrimary">#FFFFFF</item>
         <item name="colorPrimaryDark">#054047</item>
@@ -14,9 +14,9 @@
         <item name="android:statusBarColor">#462B77</item>
 
         <!-- Customize your theme here. -->
-        <item name="android:textColorPrimary">#FFFFFF</item>
+        <item name="android:textColorPrimary">#87C4CB</item>
         <item name="android:textStyle">bold</item>
         <item name="android:textColorHint">#FFFFFF</item>
-        <item name="android:backgroundTint">#190935</item>
+        <item name="android:backgroundTint">#06020D</item>
     </style>
 </resources>
