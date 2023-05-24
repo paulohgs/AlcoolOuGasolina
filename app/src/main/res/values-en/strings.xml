@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Which fuel?</string>
+    <string name="uma_bomba_de_gasolina_ilustrando_o_app">fuel pump image</string>
+    <string name="gasolina_ou_lcool">Gas or Alcohol?</string>
+    <string name="pre_o_do_alcool">Alcohol price</string>
+    <string name="pre_o_da_gasolina">Gas price</string>
+    <string name="_75">75%</string>
+    <string name="calcular">Calc</string>
+</resources>

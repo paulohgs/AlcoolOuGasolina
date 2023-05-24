@@ -4,13 +4,17 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#FFFFFF"
-    android:backgroundTint="#ADD7DC"
+    android:background="#87C4CB"
+    android:backgroundTint="#87C4CB"
     tools:context=".MainActivity">
 
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="24dp"
         android:background="@drawable/rounded_layout"
         android:backgroundTint="?android:backgroundTint"
         android:orientation="vertical"
@@ -55,7 +59,6 @@
             android:ems="10"
             android:hint="@string/pre_o_do_alcool"
             android:inputType="numberDecimal"
-            android:padding="20dp"
             tools:text="0" />
 
         <EditText
@@ -68,7 +71,6 @@
             android:ems="10"
             android:hint="@string/pre_o_da_gasolina"
             android:inputType="numberDecimal"
-            android:padding="20dp"
             tools:text="0" />
 
         <Switch
@@ -86,7 +88,6 @@
 
         <Button
             android:id="@+id/btCalcular"
-            style="@style/Widget.AppCompat.Button"
             android:layout_width="170dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
@@ -94,8 +95,8 @@
             android:layout_weight="1"
             android:autoSizeMaxTextSize="20dp"
             android:autoSizeTextType="uniform"
-            android:text="@string/calcular"
-            android:textColor="?android:backgroundTint" />
+            android:backgroundTint="#732921"
+            android:text="@string/calcular" />
 
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -4,13 +4,17 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#FFFFFF"
-    android:backgroundTint="#ADD7DC"
+    android:background="#87C4CB"
+    android:backgroundTint="#87C4CB"
     tools:context=".MainActivity">
 
     <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="64dp"
+        android:layout_marginBottom="48dp"
         android:background="@drawable/rounded_layout"
         android:backgroundTint="?android:backgroundTint"
         android:orientation="vertical"
@@ -37,7 +41,7 @@
             android:layout_gravity="center_horizontal|center_vertical"
             android:layout_marginBottom="10dp"
             android:layout_weight="1"
-            android:autoSizeMaxTextSize="30dp"
+            android:autoSizeMaxTextSize="64dp"
             android:autoSizeTextType="uniform"
             android:text="@string/gasolina_ou_lcool"
             android:textAlignment="center"
@@ -47,55 +51,66 @@
 
         <EditText
             android:id="@+id/edAlcool"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginHorizontal="30dp"
             android:layout_weight="1"
+            android:autoSizeTextType="uniform"
             android:autofillHints="numberDecimal"
             android:ems="10"
             android:hint="@string/pre_o_do_alcool"
             android:inputType="numberDecimal"
-            android:padding="20dp"
-            tools:text="0" />
+            android:textAlignment="center"
+            android:textSize="34sp" />
 
         <EditText
             android:id="@+id/edGasolina"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="30dp"
             android:layout_weight="1"
+            android:autoSizeTextType="uniform"
             android:autofillHints="numberDecimal"
             android:ems="10"
             android:hint="@string/pre_o_da_gasolina"
             android:inputType="numberDecimal"
-            android:padding="20dp"
-            tools:text="0" />
+            android:textAlignment="center"
+            android:textSize="34sp" />
 
-        <Switch
-            android:id="@+id/swPercentual"
-            android:layout_width="wrap_content"
+        <LinearLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_gravity="end"
-            android:layout_marginHorizontal="30dp"
-            android:layout_weight="2"
-            android:autoSizeTextType="uniform"
-            android:padding="16dp"
-            android:text="@string/_75"
-            tools:checked="false"
-            tools:ignore="UseSwitchCompatOrMaterialXml" />
-
-        <Button
-            android:id="@+id/btCalcular"
-            style="@style/Widget.AppCompat.Button"
-            android:layout_width="170dp"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
-            android:layout_marginVertical="20dp"
             android:layout_weight="1"
-            android:autoSizeMaxTextSize="20dp"
-            android:autoSizeTextType="uniform"
-            android:text="@string/calcular"
-            android:textColor="?android:backgroundTint" />
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btCalcular"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:layout_marginEnd="20sp"
+                android:autoSizeTextType="uniform"
+                android:backgroundTint="#732921"
+                android:foregroundGravity="center"
+                android:text="@string/calcular"
+                android:textAlignment="center"
+                android:textSize="34sp" />
+
+            <Switch
+                android:id="@+id/swPercentual"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:autoSizeTextType="uniform"
+                android:gravity="center_horizontal|center_vertical"
+                android:padding="24sp"
+                android:switchMinWidth="64dp"
+                android:text="@string/_75"
+                android:textAlignment="gravity"
+                android:textSize="48sp"
+                tools:checked="false"
+                tools:ignore="UseSwitchCompatOrMaterialXml" />
+
+        </LinearLayout>
 
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
